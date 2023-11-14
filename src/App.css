@@ -1,4 +1,8 @@
+html {
+  background-color: lightyellow;
+}
 .mainDiv {
+  font-family: sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,25 +11,75 @@
 .signupForm {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   border: 1px solid green;
   border-radius: 7px;
   padding: 20px;
-  min-height: 400px;
   font-size: 25px;
-  width: 450px;
+  max-width: 450px;
+  gap: 55px;
 }
-.signupForm input {
-  border: 1px solid black;
+
+.signinForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
   border-radius: 7px;
-  font-size: large;
-}
-.signupForm input:focus {
-  box-shadow: 0px 0px 5px 5px rgb(69, 254, 62);
+  padding: 20px;
+  font-size: 25px;
+  max-width: 350px;
+  gap: 55px;
 }
 .elementContainer {
   font-size: 29px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.elementContainer input {
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.elementContainer input:focus {
+  box-shadow: 0px 0px 5px 5px rgb(69, 254, 62);
+}
+
+.error-view {
+  font-size: medium;
+  border: 1px solid red;
+  background-color: pink;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+}
+.success-view {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border: 1px solid green;
+  background-color: lightgreen;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: x-large;
+  font-family: sans-serif;
+  text-align: center;
+}
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .submitButton {
   background-color: green;
@@ -38,4 +92,31 @@
 }
 .submitButton:hover {
   background-color: #050;
+}
+.signupRedirect {
+  font-size: small;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+.signupRedirect p {
+  margin: 0px;
+  margin-top: 10px;
+}
+.userList {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.userDetail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 5px;
+  min-width: 100%;
+  padding: 15px;
 }
